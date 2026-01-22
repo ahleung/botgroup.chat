@@ -6,29 +6,29 @@ export const modelConfigs = [
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
-    model: "deepseek-chat/deepseek-coder",
-    apiKey: "ARK_API_KEY",
+    model: "deepseek-coder",
+    apiKey: "DEEPSEEK_API_KEY",
     baseURL: "https://api.deepseek.com/v1/chat/completions"
   },
   {
-    model: "hunyuan-turbos-latest",
-    apiKey: "HUNYUAN_API_KEY1",
-    baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
+    model: "hunyuan-pro",
+    apiKey: "HHUNYUAN_API_KEY",
+    baseURL: "https://hunyuan.tencentcloudapi.com"
   },
   {
-    model: "doubao-1-5-lite-32k-250115",//豆包模型|火山引擎接入点（改成自己的）
+    model: "doubao-pro-32k",//豆包模型|火山引擎接入点（改成自己的）
     apiKey: "ARK_API_KEY",
-    baseURL: "https://ark.cn-beijing.volces.com/api/v3"
+    baseURL: "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
   },
   {
-    model: "ep-20250306223646-szzkw",//deepseekv火山引擎接入点（改成自己的）
-    apiKey: "ARK_API_KEY1",
-    baseURL: "https://ark.cn-beijing.volces.com/api/v3"
+    model: "doubao-lite-4k",//deepseekv火山引擎接入点（改成自己的）
+    apiKey: "ARK_API_KEY",
+    baseURL: "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
   },
   {
-    model: "glm-4-air",
+    model: "glm-4", //智谱
     apiKey: "GLM_API_KEY",
-    baseURL: "https://open.bigmodel.cn/api/paas/v4/"
+    baseURL: "https://open.bigmodel.cn/api/paas/v4/chat/completions"
   },
   {
     model: "qwen-turbo",//调度模型
@@ -38,17 +38,17 @@ export const modelConfigs = [
   {
     model: "deepseek-chat",
     apiKey: "DEEPSEEK_API_KEY",
-    baseURL: "https://api.deepseek.com/v1"
+    baseURL: "https://api.deepseek.com/v1/chat/completions"
   },
   {
-    model: "moonshot-v1-8k",
+    model: "moonshot-v1-32k",
     apiKey: "KIMI_API_KEY",
-    baseURL: "https://api.moonshot.cn/v1"
+    baseURL: "https://api.moonshot.cn/v1/chat/completions"
   },
   {
-    model: "ernie-3.5-128k",
+    model: "ernie-bot-4",
     apiKey: "BAIDU_API_KEY",
-    baseURL: "https://qianfan.baidubce.com/v2"
+    baseURL: "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/ernie_bot_4"
   }
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
