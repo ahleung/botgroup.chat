@@ -8,7 +8,7 @@ export const modelConfigs = [
   {
     model: "deepseek-chat",
     apiKey: "DEEPSEEK_API_KEY",
-    baseURL: "https://api.deepseek.com/v1/chat/completions"
+    baseURL: "https://api.deepseek.com/chat/completions"
   },
   {
     model: "hunyuan-pro",
