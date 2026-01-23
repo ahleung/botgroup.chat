@@ -26,9 +26,9 @@ export const modelConfigs = [
     baseURL: "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
   },
   {
-    model: "glm-4", //智谱
+    model: "glm-4.7", //智谱
     apiKey: "GLM_API_KEY",
-    baseURL: "https://open.bigmodel.cn/api/paas/v4"
+    baseURL: "https://open.bigmodel.cn/api/paas/v4/chat/completions"
   },
   {
     model: "qwen-turbo",//调度模型
